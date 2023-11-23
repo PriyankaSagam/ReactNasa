@@ -47,7 +47,15 @@
   Once components and pages are created, created broilerplate code for each using (rfce)
 
   Imported needed components into App.jsx or wherever they are going to be used
-  
+
   In main.jsx, wrapped Router component around App component
 
- Here i take 3 components and 3 pages
+here i took 3 components and 3 pages
+
+pages => About,Home,NasaList
+components => Form,NasaContentDisplay,Nav
+
+Here i fetch data from URL 
+
+if we click on NasaList then search button appears..if you search any thing like sun, moon, mars..
+then you get information.
