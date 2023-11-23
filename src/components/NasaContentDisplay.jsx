@@ -5,7 +5,7 @@ function NasaContentDisplay({ nasa }) {
         
         return (
                 
-            < div >
+            < div className="map">
             { nasa.collection.items.map(addContent) }
             </div >
             
@@ -18,7 +18,7 @@ function NasaContentDisplay({ nasa }) {
     function addContent(item, index) {
         try {
             return <div key={index}>
-            <div>
+            <div className="image">
                 <img src={item["links"][0]["href"]} alt={item["data"][0]["title"]} />
                 <div>
                     <h5>{item['data'][0]['title']}</h5>
@@ -27,8 +27,8 @@ function NasaContentDisplay({ nasa }) {
                     </p>
                 </div>
                 <ul>
-                    <li key={0}>Date Created - <b>{item['data'][0]['date_created']}</b></li>
-                    <li key={1}>NASA Id - {item['data'][0]['nasa_id']}</li>
+                    <li className="key" key={0}>Date Created - <b>{item['data'][0]['date_created']}</b></li>
+                    <li className="id" key={1}>NASA Id - {item['data'][0]['nasa_id']}</li>
                 </ul>
             </div>
         </div>

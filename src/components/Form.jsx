@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import '../App.css'
 function Form(props) {
     //add state to hold the data of the form
     //The component must return some JSX
@@ -16,9 +17,9 @@ function Form(props) {
        props.nasaSearchList(searchData.searchterm);
     }
   return (
-      <div>
+      <div className="container">
           <form onSubmit={handleSubmit}>
-              <input 
+              <input className="input"
                   type="text"
                   name="searchterm"
                   onChange={handleChange}
@@ -26,7 +27,7 @@ function Form(props) {
                   value={searchData.searchterm} />
               <input type = "submit" value = "submit"/>
           </form>
-          {/* <p>Search:{searchData.searchterm}</p> */}
+           <p><h2>Search:{searchData.searchterm}</h2></p> 
     </div>
   )
 }

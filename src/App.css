@@ -10,3 +10,33 @@
   color: white;
   text-decoration: none;
 }
+.input{
+  box-sizing: border-box;
+  background-color: rgb(166, 173, 194)
+}
+.container{
+  box-sizing: border-box;
+  border:1px;
+  background-color: blanchedalmond;
+
+}
+.map{
+  box-sizing: border-box;
+  background-color: blanchedalmond;
+  border: 1px ;
+}
+.image{
+  box-sizing: border-box;
+  background-color: rgb(5, 16, 42);
+  border: 1px ;
+  height: auto;
+  color:aqua
+
+}
+.key{
+  color:azure;
+}
+.id{
+  color:azure;
+
+}
